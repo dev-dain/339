@@ -64,6 +64,7 @@ public class LogIn extends JFrame {
 		blogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
+				Menu menu = new Menu();
 				dispose();
 			}
 		});
