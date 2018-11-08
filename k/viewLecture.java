@@ -1,4 +1,4 @@
-package kimDaIn;
+package k;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
