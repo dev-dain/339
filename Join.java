@@ -170,7 +170,9 @@ public class Join extends JFrame {
 		numbercheckb.setBounds(393, 290, 108, 29);
 		contentPane.add(numbercheckb);
 			
-		
+		JButton photocheckb = new JButton("upload");
+		photocheckb.setBounds(20, 210, 108, 29);
+		contentPane.add(photocheckb);
 		
 		this.setVisible(true);
 

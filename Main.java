@@ -7,9 +7,7 @@ public class Main {
 	
 			
 		Settings settings = new Settings();
-	
-		CheckX checkx = new CheckX();	
-		CheckO checko = new CheckO();
+		web w = new web();	
 		
 	}
 

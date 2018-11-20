@@ -1,5 +1,9 @@
+import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -18,10 +22,23 @@ public class CheckO extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel label = new JLabel("\uC0AC\uC6A9\uAC00\uB2A5\uD569\uB2C8\uB2E4.");
-		label.setFont(new Font("±º∏≤", Font.PLAIN, 20));
+		label.setFont(new Font("ÔøΩÔøΩÔøΩÔøΩ", Font.PLAIN, 20));
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		label.setBounds(42, 23, 188, 36);
 		contentPane.add(label);
+		
+		JButton check = new JButton("ÌôïÏù∏");
+		check.setFont(new Font("Íµ¥Î¶º", Font.BOLD, 22));
+		check.setBackground(Color.WHITE);
+		check.setBounds(80, 50,100, 30);
+		contentPane.add(check);
+		check.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) { 
+				
+				dispose();
+			}
+		});
+		
 		this.setVisible(true);
 	}
 	

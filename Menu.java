@@ -1,7 +1,11 @@
 import java.awt.Button;
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
 
+import javax.management.relation.Role;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -85,6 +89,25 @@ public Menu() {
 		food.setBackground(Color.WHITE);
 		food.setBounds(728, 650, 151, 109);
 		contentPane.add(food);
+		food.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				riceC  rice=null;
+				try {
+					rice = new riceC();
+					
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}	
+				
+				
+				
+				
+				
+				
+			}
+		});
+		
 		
 		JButton bus = new JButton("셔틀");
 		bus.setFont(new Font("굴림", Font.BOLD, 22));
