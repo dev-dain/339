@@ -1,4 +1,5 @@
-package test;
+//package from K
+package db;
      
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -18,7 +19,7 @@ public class DeleteTest {
         try {           
             Class.forName("com.mysql.cj.jdbc.Driver");
             
-            String url = "jdbc:mysql://localhost/student_db";
+            String url = "jdbc:mysql://localhost/student_db?serverTimezone=Asia/Seoul";
             String db_id ="root";
             String db_pw ="project339";
                

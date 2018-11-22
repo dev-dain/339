@@ -1,4 +1,5 @@
-package test;
+//package from K
+package db;
  
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -13,27 +14,14 @@ public class SelectTest {
     ResultSet rs = null;
      
     try{
-      // 1. 드라이버 로딩
       Class.forName("com.mysql.cj.jdbc.Driver");
        
-      // 2. 연결하기
-      String url = "jdbc:mysql://localhost/student_db";
+      String url = "jdbc:mysql://localhost/student_db?serverTimezone=Asia/Seoul";
       conn = DriverManager.getConnection(url, "root", "project339");
-       
-       
-      // 3. 쿼리 수행을 위한 Statement 객체 생성
       stmt = conn.createStatement();
        
-      // 4. SQL 쿼리 작성
-      // 주의사항
-      // 1) JDBC에서 쿼리를 작성할 때는 세미콜론(;)을 빼고 작성한다.
-      // 2) SELECT 할 때 * 으로 모든 칼럼을 가져오는 것보다
-      //    가져와야 할 칼럼을 직접 명시해주는 것이 좋다.
-      // 3) 원하는 결과는 쿼리로써 마무리 짓고, java 코드로 후작업 하는 것은 권하지 않음
-      // 4) 쿼리를 한 줄로 쓰기 어려운 경우 들여쓰기를 사용해도 되지만 띄어쓰기에 유의 !!
       String sql = "SELECT name, major, id from student";
-       
-       
+              
       // 5. 쿼리 수행
       // 레코드들은 ResultSet 객체에 추가된다.
       rs = stmt.executeQuery(sql);

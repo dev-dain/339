@@ -1,4 +1,5 @@
-package k;
+//package from K
+package gui;
 
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -59,6 +60,7 @@ public class viewTimeTable extends JFrame {
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 683, 772);
+		this.setTitle("½Ã°£Ç¥");
 		contentPane = new JPanel();
 		contentPane.setBackground(Color.WHITE);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
