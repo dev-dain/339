@@ -1,4 +1,5 @@
-package test;
+//package from S
+package db;
  
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -22,7 +23,7 @@ public class InsertTest {
     		Class.forName("com.mysql.cj.jdbc.Driver");
        
     		// 2. 연결하기
-    		String url = "jdbc:mysql://localhost/student_db";
+    		String url = "jdbc:mysql://localhost/student_db?serverTimezone=Asia/Seoul";
     		conn = DriverManager.getConnection(url, "root", "project339");
        
     		// 3. SQL 쿼리 준비

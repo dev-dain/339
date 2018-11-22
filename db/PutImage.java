@@ -1,4 +1,5 @@
-package test;
+//package from K
+package db;
 
 import java.sql.*;
 import java.io.*;

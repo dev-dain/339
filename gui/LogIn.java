@@ -1,3 +1,6 @@
+//package from L
+package gui;
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -64,7 +67,6 @@ public class LogIn extends JFrame {
 		blogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				Menu menu = new Menu();
 				dispose();
 			}
 		});

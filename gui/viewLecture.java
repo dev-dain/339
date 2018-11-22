@@ -1,4 +1,5 @@
-package k;
+//package from K
+package gui;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -41,6 +42,7 @@ public class viewLecture extends JFrame {
 	public viewLecture() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 725, 500);
+		this.setTitle("강의 자세히 보기");
 		contentPane = new JPanel();
 		contentPane.setBackground(Color.WHITE);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));

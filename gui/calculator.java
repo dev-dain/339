@@ -1,3 +1,6 @@
+//package from S
+package gui;
+
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 

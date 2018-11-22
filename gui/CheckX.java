@@ -1,3 +1,6 @@
+//package from L
+package gui;
+
 import java.awt.Font;
 
 import javax.swing.JFrame;
