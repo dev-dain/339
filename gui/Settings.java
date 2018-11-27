@@ -1,6 +1,3 @@
-//package from L
-package gui;
-
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -41,43 +38,43 @@ public class Settings extends JFrame {
 		contentPane.add(picture);
 		
 		JLabel IDtext = new JLabel();
-		IDtext.setFont(new Font("±¼¸²", Font.PLAIN, 20));
+		IDtext.setFont(new Font("ï¿½ï¿½ï¿½ï¿½", Font.PLAIN, 20));
 		IDtext.setText("ID");
 		IDtext.setBounds(158, 100, 77, 27);
 		contentPane.add(IDtext);
 		
 		JLabel Pw = new JLabel();
-		Pw.setFont(new Font("±¼¸²", Font.PLAIN, 20));
+		Pw.setFont(new Font("ï¿½ï¿½ï¿½ï¿½", Font.PLAIN, 20));
 		Pw.setText("NewPw");
 		Pw.setBounds(158, 300, 77, 27);
 		contentPane.add(Pw);
 		
 		JLabel rePw = new JLabel();
-		rePw.setFont(new Font("±¼¸²", Font.PLAIN, 20));
+		rePw.setFont(new Font("ï¿½ï¿½ï¿½ï¿½", Font.PLAIN, 20));
 		rePw.setText("Pw\uD655\uC778");
 		rePw.setBounds(158, 350, 77, 27);
 		contentPane.add(rePw);
 		
 		JLabel e_mail = new JLabel();
-		e_mail.setFont(new Font("±¼¸²", Font.PLAIN, 20));
+		e_mail.setFont(new Font("ï¿½ï¿½ï¿½ï¿½", Font.PLAIN, 20));
 		e_mail.setText("e_mail");
 		e_mail.setBounds(158, 250, 77, 27);
 		contentPane.add(e_mail);
 		
 		JLabel major = new JLabel();
-		major.setFont(new Font("±¼¸²", Font.PLAIN, 20));
+		major.setFont(new Font("ï¿½ï¿½ï¿½ï¿½", Font.PLAIN, 20));
 		major.setText("\uD559\uACFC");
 		major.setBounds(158, 150, 77, 27);
 		contentPane.add(major);
 		
 		JLabel number = new JLabel();;
-		number.setFont(new Font("±¼¸²", Font.PLAIN, 20));
+		number.setFont(new Font("ï¿½ï¿½ï¿½ï¿½", Font.PLAIN, 20));
 		number.setText("\uD559\uBC88");
 		number.setBounds(158, 200, 56, 27);
 		contentPane.add(number);
 		
 		JLabel name = new JLabel();
-		name.setFont(new Font("±¼¸²", Font.PLAIN, 20));
+		name.setFont(new Font("ï¿½ï¿½ï¿½ï¿½", Font.PLAIN, 20));
 		name.setText("\uC774\uB984");
 		name.setBounds(158, 50, 77, 27);
 		contentPane.add(name);
@@ -144,6 +141,24 @@ public class Settings extends JFrame {
 		JButton e_mailsb = new JButton("\uC911\uBCF5\uD655\uC778");
 		e_mailsb.setBounds(403, 249, 108, 29);
 		contentPane.add(e_mailsb);
+		e_mailsb.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) { 
+				CheckX checkx = new CheckX();	
+				
+			}
+		});
+		
+		
+		JButton photocheckb = new JButton("upload");
+		photocheckb.setBounds(20, 210, 108, 29);
+		contentPane.add(photocheckb);
+		
+		photocheckb.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) { 
+				CheckX checkx = new CheckX();	
+				
+			}
+		});
 		
 
 		this.setVisible(true);
