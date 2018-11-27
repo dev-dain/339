@@ -1,4 +1,5 @@
-package kimDaIn;
+//package from K
+package gui;
 
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -37,6 +38,7 @@ public class rUDeleteIt extends JFrame {
 	public rUDeleteIt() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 468, 220);
+		this.setTitle("강의 삭제");
 		contentPane = new JPanel();
 		contentPane.setBackground(Color.WHITE);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));

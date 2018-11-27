@@ -7,7 +7,7 @@ public class Main {
 	
 			
 		Settings settings = new Settings();
-		web w = new web();	
+		
 		
 	}
 

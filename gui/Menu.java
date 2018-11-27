@@ -119,6 +119,13 @@ public Menu() {
 		library.setFont(new Font("굴림", Font.BOLD, 22));
 		library.setBackground(Color.WHITE);
 		library.setBounds(1328, 650, 151, 109);
+		 library.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) { 
+				web w = new web("http://mcard.duksung.ac.kr:8080/PW/pw20.php/");	
+				
+			}
+		});
+		
 		contentPane.add(library);
 		
 		JPanel mypanel = new JPanel();

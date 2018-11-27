@@ -1,5 +1,5 @@
-package kimDaIn;
-
+//package from K
+package gui;
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -41,6 +41,7 @@ public class AddLecture extends JFrame {
 	public AddLecture() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 778, 526);
+		this.setTitle("강의 추가");
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -82,24 +83,24 @@ public class AddLecture extends JFrame {
 		});
 		contentPane.add(addBtn);
 		
-		JTextArea textArea = new JTextArea();
-		textArea.setBounds(310, 124, 264, 24);
-		contentPane.add(textArea);
+		JTextArea textArea_1 = new JTextArea();
+		textArea_1.setBounds(310, 124, 264, 24);
+		contentPane.add(textArea_1);
 		
 		JTextArea textArea_2 = new JTextArea();
-		textArea_2.setBounds(310, 220, 264, 24);
+		textArea_2.setBounds(310, 172, 264, 24);
 		contentPane.add(textArea_2);
 		
 		JTextArea textArea_3 = new JTextArea();
-		textArea_3.setBounds(310, 268, 264, 24);
+		textArea_3.setBounds(310, 220, 264, 24);
 		contentPane.add(textArea_3);
 		
 		JTextArea textArea_4 = new JTextArea();
-		textArea_4.setBounds(310, 316, 264, 24);
+		textArea_4.setBounds(310, 268, 264, 24);
 		contentPane.add(textArea_4);
 		
-		JTextArea textArea_1 = new JTextArea();
-		textArea_1.setBounds(310, 172, 264, 24);
-		contentPane.add(textArea_1);
+		JTextArea textArea_5 = new JTextArea();
+		textArea_5.setBounds(310, 316, 264, 24);
+		contentPane.add(textArea_5);
 	}
 }
