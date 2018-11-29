@@ -1,27 +1,23 @@
-//package from S
-package gui;
-
-import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.table.AbstractTableModel;
-import javax.swing.JLabel;
 import java.awt.Font;
-import javax.swing.JComboBox;
+import java.awt.Image;
+
 import javax.swing.DefaultCellEditor;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
+import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
-import java.awt.Color;
-import java.awt.Container;
-
+import javax.swing.table.AbstractTableModel;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
 
 public class calculator extends JFrame {
 
@@ -43,6 +39,7 @@ public class calculator extends JFrame {
 				}
 			}
 		});
+		
 	}
 
 	/**
@@ -50,7 +47,7 @@ public class calculator extends JFrame {
 	 */
 	public calculator() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 550);
+		setBounds(100, 100, 550, 750);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -58,20 +55,20 @@ public class calculator extends JFrame {
 		
 		JLabel label = new JLabel("\uCDE8\uB4DD \uD559\uC810");
 		label.setFont(new Font("±¼¸²", Font.PLAIN, 15));
-		label.setBounds(30, 30, 61, 15);
+		label.setBounds(97, 34, 61, 15);
 		contentPane.add(label);
 		
 		JComboBox comboBox = new JComboBox();
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"\uD559\uB144 / \uD559\uAE30", "1\uD559\uB144 1\uD559\uAE30", "1\uD559\uB144 2\uD559\uAE30", "2\uD559\uB144 1\uD559\uAE30", "2\uD559\uB144 2\uD559\uAE30", "3\uD559\uB144 1\uD559\uAE30", "3\uD559\uB144 2\uD559\uAE30", "4\uD559\uB144 1\uD559\uAE30", "4\uD559\uB144 2\uD559\uAE30"}));
-		comboBox.setBounds(40, 56, 90, 21);
+		comboBox.setBounds(97, 68, 90, 21);
 		contentPane.add(comboBox);
 		
 		JButton btnNewButton = new JButton("\uCE78 \uCD94\uAC00");
-		btnNewButton.setBounds(156, 55, 97, 23);
+		btnNewButton.setBounds(213, 67, 97, 23);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("\uCE78 \uC0AD\uC81C");
-		btnNewButton_1.setBounds(278, 55, 97, 23);
+		btnNewButton_1.setBounds(335, 67, 97, 23);
 		contentPane.add(btnNewButton_1);
 		
 		table = new JTable();
@@ -94,12 +91,25 @@ public class calculator extends JFrame {
 		JComboBox comboBox1 = new JComboBox(Grades);
 		table.getColumnModel().getColumn(0).setCellEditor(new DefaultCellEditor(comboBox1));
 		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		table.setBounds(40, 97, 337, 150);
+		table.setBounds(95, 111, 337, 150);
 		contentPane.add(table);
+		
+		JLabel label_1 = new JLabel("\uC804\uCCB4 \uD3C9\uADE0");
+		label_1.setFont(new Font("±¼¸²", Font.PLAIN, 15));
+		label_1.setBounds(97, 295, 61, 15);
+		contentPane.add(label_1);
+		
+		JLabel lblNewLabel = new JLabel("");
+		
+		lblNewLabel.setIcon((Icon) new ImageIcon(new ImageIcon("C:\\Users\\DS\\eclipse-workspace\\339\\PieChart.jpeg").getImage().getScaledInstance(446, 334, Image.SCALE_DEFAULT)));
+		
+		lblNewLabel.setBounds(49, 320, 446, 334);
+		contentPane.add(lblNewLabel);
 	}
+}
 	
-	
-	class EditableTableModel extends AbstractTableModel {
+
+class EditableTableModel extends AbstractTableModel {
 		String[] columnTitles;
 
 		Object[][] dataEntries;
@@ -139,4 +149,4 @@ public class calculator extends JFrame {
 			dataEntries[row][column] = value;
 		}
 	}
-}
+
