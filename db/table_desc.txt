@@ -1,0 +1,32 @@
+in student_db
+
+table student(
+	id(ID) varchar(15) not null primary key,
+	number(학번) int(8) not null,
+	name(이름) varchar(10) not null,
+	pw(암호) varchar(20) not null,
+	email(메일주소) varchar(40),
+	question(질문) varchar(50),
+	answer(답변) varchar(40),
+	major(전공) varchar(15)
+)
+
+table friend(
+	id(ID) varchar(15) not null primary key,
+	f_number(학번) int(8) not null
+)
+
+table grade(
+	id(ID) varchar(15) not null primary key,
+	number(학번) int(8) not null primary key,
+	years(학년학기) varchar(4),
+	grade(성적) varchar(2),
+	score(학점) varchar(1),
+	lecture(강의명) varchar(30)
+)
+
+table img(
+	id(ID) varchar(15),
+	number(학번) int(8),
+	photo(사진) blob
+)
